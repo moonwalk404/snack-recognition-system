@@ -1,0 +1,10 @@
+# 数据集存放的绝对路径
+path: D:/AI_Vision_Study/Snack_Dataset
+
+# 训练集和验证集的文件夹名字
+train: images
+val: images
+
+# 我们的分类字典
+names:
+  0: snack

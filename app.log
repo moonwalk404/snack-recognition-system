@@ -1,0 +1,18 @@
+2026-06-11 23:57:20 [INFO    ] VisionApp | 日志系统初始化完成 (level=INFO, file=app.log)
+2026-06-12 00:06:27 [INFO    ] VisionApp | 日志系统初始化完成 (level=INFO, file=app.log)
+2026-06-12 00:06:27 [INFO    ] VisionApp | ==================================================
+2026-06-12 00:06:27 [INFO    ] VisionApp | 专属 AI 零食检测系统 启动
+2026-06-12 00:06:27 [INFO    ] VisionApp | ==================================================
+2026-06-12 00:06:27 [INFO    ] VisionApp.GUI | 主窗口初始化完成
+2026-06-12 00:09:36 [INFO    ] VisionApp.GUI | 用户请求启动检测
+2026-06-12 00:09:36 [INFO    ] VisionApp.GUI | 创建 DetectionWorker...
+2026-06-12 00:09:36 [INFO    ] VisionApp.Worker | Worker 线程启动中...
+2026-06-12 00:09:36 [INFO    ] VisionApp.Worker | 正在加载 YOLO 模型: runs/detect/train/weights/best.pt
+2026-06-12 00:09:36 [INFO    ] VisionApp.Worker | YOLO 模型加载成功
+2026-06-12 00:09:36 [INFO    ] VisionApp.Worker | 摄像头已打开 (索引=0, 分辨率=640x480)
+2026-06-12 00:09:36 [INFO    ] VisionApp.Worker | 检测循环已启动 (间隔=30ms, conf=0.80)
+2026-06-12 00:10:03 [INFO    ] VisionApp.GUI | 应用程序正在退出...
+2026-06-12 00:10:03 [INFO    ] VisionApp.Worker | Worker 线程停止中...
+2026-06-12 00:10:03 [INFO    ] VisionApp.Worker | 摄像头已释放
+2026-06-12 00:10:03 [INFO    ] VisionApp.GUI | Worker 线程已安全退出
+2026-06-12 00:10:03 [INFO    ] VisionApp | 应用正常退出 (exit_code=0)

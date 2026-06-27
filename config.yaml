@@ -1,0 +1,37 @@
+# ============================================================================
+#  AI 零食检测系统 — 工业级配置文件
+#  修改此文件即可调整所有运行参数，无需改动代码
+# ============================================================================
+
+# ---- 应用基础设置 ----
+app:
+  name: "专属 AI 零食检测系统"
+  window_width: 800
+  window_height: 600
+
+# ---- 摄像头参数 ----
+camera:
+  index: 0          # 摄像头设备索引（0 = 默认摄像头）
+  fps: 30           # 采集间隔（毫秒），~33 FPS
+
+# ---- YOLO 模型参数 ----
+model:
+  path: "runs/detect/train/weights/best.pt"   # 训练好的权重文件路径
+  conf_threshold: 0.8                          # 置信度阈值（0~1），低于此值的结果被丢弃
+
+# ---- 日志系统 ----
+logging:
+  level: "INFO"                # 日志级别：DEBUG / INFO / WARNING / ERROR
+  file: "app.log"              # 日志文件路径（相对于工作目录）
+  format: "%(asctime)s [%(levelname)-8s] %(name)s | %(message)s"
+  datefmt: "%Y-%m-%d %H:%M:%S"
+
+# ---- UI 警报文案 ----
+ui:
+  snack_label: "魔芋爽"
+  plentiful_threshold: 2       # 零食数量 >= 此值视为"库存充足"
+  messages:
+    ready:    "🟢 系统准备就绪"
+    plentiful: "🟢 零食库存充足，当前数量：{count}"
+    low:       "⚠️ 警告：魔芋爽仅剩最后一包，请省着点吃！"
+    empty:     "🚨 警报：画面中未检测到魔芋爽！立刻下楼去买！"
